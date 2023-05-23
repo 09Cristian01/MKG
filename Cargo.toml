@@ -1,0 +1,20 @@
+[package]
+name = "mkg"
+version = "0.1.0"
+edition = "2021"
+authors = ["Cristian Guilarte<crislgf1@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[build]
+rustc-wrapper = "./sccache"
+
+[dependencies]
+# Terminal operations
+clap = "4.3.0" # inline args input
+termion = "2.0.1" # user input and output
+terminal-menu = "2.0.5" # menus 
+
+# Others
+tokio = "1.28.1"
+serde = "1.0.163"
+#assert_cmd
